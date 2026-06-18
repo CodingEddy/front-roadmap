@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+  <style>
+    body {
+      font-size: 16px;
+      margin: 0;
+      font-family: "Sansation", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    main {
+      width: 80%;
+      max-width: 1200px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    main>div {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: auto;
+      height: 300px;
+      gap: 10px;
+    }
+
+    .float-comment-container {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .float-comment-container>div:first-child {
+      color: white;
+      background-color: black;
+      border-radius: 25px;
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .obt {
+      background-color: black;
+      height: 40px;
+      width: 40px;
+      transform: rotate(45deg);
+      margin-top: -20px;
+      margin-left: 36px;
+    }
+
+    .user-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: auto;
+      margin-top: 15px;
+    }
+
+    .user-picture {
+      background-image: url("user.jpg");
+      background-size: 60px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .comment-container {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      border: 2px solid black;
+      border-radius: 25px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .picture {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .picture img {
+      height: 100%;
+      width: 100%;
+      border-radius: 25px;
+    }
+
+    .comment-rating-container {
+      grid-column-start: 4;
+      grid-column-end: 9;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    @media screen and (max-width: 800px) {}
+  </style>
+</head>
+
+<body>
+  <main>
+    <div>
+      <div class="float-comment-container">
+        <div>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since 1966, when designers at Letraset and James Mosley, the
+          librarian at St Bride Printing Library in London, took a 1914 Cicero
+          translation and scrambled it to make<br /><br />translation and
+          scrambled it to make
+        </div>
+        <div class="obt"></div>
+        <div class="user-container">
+          <div class="user-picture"></div>
+          <div>
+            <div>Eddy Armando</div>
+            <div>Frontend Developer</div>
+          </div>
+        </div>
+      </div>
+      <div class="comment-container">
+        <div>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since 1966, when designers at Letraset and James Mosley, the
+          librarian at St Bride Printing Library in London, took a 1914 Cicero
+          translation and scrambled it to make
+        </div>
+        <div class="user-container">
+          <div class="user-picture"></div>
+          <div>
+            <div>Eddy Armando</div>
+            <div>Frontend Developer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="picture">
+        <img src="https://img.magnific.com/vector-gratis/sigueme-diseno-temas-sociales-empresariales_24877-50426.jpg" />
+      </div>
+      <div class="comment-rating-container">
+        <div>stars</div>
+        <div>Jackie Mackle</div>
+        <div>Engieneering</div>
+        <div>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since 1966, when designers at Letraset
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

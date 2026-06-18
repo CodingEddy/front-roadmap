@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/9402c6b12a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        .input-container {
+            display: flex;
+        }
+
+        .calendar-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            width: 190px;
+            border: 1px solid black;
+        }
+
+        .calendar-container div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .prev-next-buttons {
+            grid-column-start: span 1;
+        }
+
+        .date {
+            grid-column-start: span 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="datePicker-container">
+        <div class="input-container">
+            <input type="text" id="calendar-input" placeholder="dd / mm / yyyy" /><button>
+                <i class="fa-solid fa-calendar"></i>
+            </button>
+        </div>
+        <div class="calendar-container">
+            <div class="prev-next-buttons"><button><</button>
+            </div>
+            <div class="date">December 2022</div>
+            <div class="prev-next-buttons"><button>></button></div>
+            <div>S</div>
+            <div>M</div>
+            <div>T</div>
+            <div>W</div>
+            <div>T</div>
+            <div>F</div>
+            <div>S</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div>31</div>
+        </div>
+    </div>
+</body>
+
+</html>

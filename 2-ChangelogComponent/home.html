@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="An interactive playground and comprehensive guide for mastering CSS Selectors. Practice basic selectors, combinators, attribute selectors, and pseudo-classes in real-time.">
+    <title>CSS Selectors Interactive Playground & Study Guide</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body>div {
+            width: 60%;
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 40px 0;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+
+        body>div>div {
+            margin: 40px 10px;
+        }
+
+        body>div>div:first-child {
+            text-align: center;
+        }
+
+        body>div>div:nth-child(3) {
+            display: flex;
+            justify-content: center;
+        }
+
+        .log-container {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            column-gap: 10px;
+        }
+
+        .log-container div {
+            padding: 10px;
+        }
+
+        .log-container>div:first-child {
+            text-align: end;
+            border-right: 2px solid black;
+        }
+
+        .date {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            color: gray;
+        }
+
+        .black-point {
+            padding: 0 !important;
+            height: 10px;
+            width: 10px;
+            background-color: black;
+            border-radius: 25px;
+            position: relative;
+            right: -16px;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+        @media screen and (max-width: 700px) {
+            body>div {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            body>div {
+                width: 100%;
+                border: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h2>Changelog</h2>
+            <span>Here's everything we have shipped in the past few days</span>
+        </div>
+        <div>
+            <div class="log-container">
+                <div class="date">September 3, 2024 <div class="black-point"></div>
+                </div>
+                <div>Announcing Projects on Frontend Roadmap</div>
+            </div>
+            <div class="log-container">
+                <div class="date">Agust 28, 2024 <div class="black-point"></div>
+                </div>
+                <div>Build your learning habits with learning streaks</div>
+            </div>
+            <div class="log-container">
+                <div class="date">Agust 1, 2024 <div class="black-point"></div>
+                </div>
+                <div>Redis roadmap</div>
+            </div>
+        </div>
+        <div>
+            <div class="btn">
+                Visit Complete Changelog
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
