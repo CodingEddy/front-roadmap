@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9402c6b12a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 16px;
+        margin: 0;
+        font-family: "Sansation", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .container {
+        width: 70%;
+        max-width: 1200px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: end;
+      }
+
+      .card {
+        padding: 1em;
+        border: 2px solid black;
+        border-radius: 10px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      h2,
+      .price,
+      .desc {
+        text-align: center;
+      }
+
+      .price span {
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        background-color: lightgray;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .popular-container div {
+        padding: 10px 20px;
+        background-color: orange;
+        border: 2px solid black;
+        border-radius: 10px;
+        position: relative;
+        margin-top: -20px;
+      }
+
+      .popular-card .card {
+        border: none;
+      }
+
+      .popular-card {
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+
+      .d-flex-center {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Basic</h2>
+        <div class="price"><span>$9</span>/mo</div>
+        <div class="desc">
+          <div>Essential features</div>
+          <div>to get started.</div>
+        </div>
+        <hr />
+        <ul>
+          <li>1 user</li>
+          <li>5 projects</li>
+          <li>10 GB storage</li>
+          <li>Email support</li>
+          <li>Basic reports</li>
+        </ul>
+        <div class="d-flex-center">
+          <div class="btn">Choose Basic</div>
+        </div>
+      </div>
+
+      <div class="popular-card">
+        <div class="popular-container d-flex-center">
+          <div>Most popular</div>
+        </div>
+        <div class="card">
+          <h2>Basic</h2>
+          <div class="price"><span>$9</span>/mo</div>
+          <div class="desc">
+            <div>Essential features</div>
+            <div>to get started.</div>
+          </div>
+          <hr />
+          <ul>
+            <li>1 user</li>
+            <li>5 projects</li>
+            <li>10 GB storage</li>
+            <li>Email support</li>
+            <li>Basic reports</li>
+          </ul>
+          <div class="d-flex-center">
+            <div class="btn">Choose Basic</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Basic</h2>
+        <div class="price"><span>$9</span>/mo</div>
+        <div class="desc">
+          <div>Essential features</div>
+          <div>to get started.</div>
+        </div>
+        <hr />
+        <ul>
+          <li>1 user</li>
+          <li>5 projects</li>
+          <li>10 GB storage</li>
+          <li>Email support</li>
+          <li>Basic reports</li>
+        </ul>
+        <div class="d-flex-center">
+          <div class="btn">Choose Basic</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
