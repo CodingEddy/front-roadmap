@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9402c6b12a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 16px;
+        margin: 0;
+        font-family: "Sansation", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .container {
+        width: 70%;
+        max-width: 1200px;
+        margin: 100px auto;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+      }
+
+      .menu li {
+        margin: 10px 20px;
+      }
+
+      .menu li:first-child {
+        list-style-type: none;
+      }
+
+      .tooltip-container {
+        display: none;
+        background-color: black;
+        color: white;
+        padding: 16px;
+        border-radius: 10px;
+        position: absolute;
+        margin-top: -72px;
+      }
+
+      .hover-menu:hover > .tooltip-container {
+        display: block;
+      }
+
+      .square {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: black;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="menu">
+          <li class="hover-menu">
+            <div class="tooltip-container">
+              <div>Here is everithing I have built</div>
+              <div class="square"></div>
+            </div>
+            <div>Menu</div>
+          </li>
+          <li class="hover-menu">
+            <div class="tooltip-container">
+              <div>Here is everithing I have built</div>
+              <div class="square"></div>
+            </div>
+            <div>Projects</div>
+          </li>
+          <li class="hover-menu">
+            <div class="tooltip-container">
+              <div>Here is everithing I have built</div>
+              <div class="square"></div>
+            </div>
+            <div>Blog</div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
