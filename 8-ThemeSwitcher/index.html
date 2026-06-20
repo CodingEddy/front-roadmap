@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9402c6b12a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 16px;
+        margin: 0;
+        font-family: "Sansation", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .container {
+        width: 70%;
+        max-width: 1200px;
+        margin: 100px auto;
+      }
+
+      .d-flex-center {
+        display: flex;
+        justify-content: center;
+      }
+
+      .theme-container {
+        width: 300px;
+      }
+
+      .radio-btns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      .radio-btns div {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .radio-btns input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+      }
+
+      .btn-ligth:has(input[type="radio"]:checked) {
+        background-color: aqua;
+        border-radius: 10px 0 0 10px;
+      }
+
+      .btn-dark:has(input[type="radio"]:checked) {
+        background-color: aqua;
+      }
+
+      .btn-custom:has(input[type="radio"]:checked) {
+        background-color: green;
+        border-radius:0 10px 10px 0;
+      }
+
+      .btn {
+        padding: 10px;
+        color: white;
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container d-flex-center">
+      <div class="theme-container">
+        <div class="radio-btns">
+          <label for="ligth">
+            <div class="btn-ligth">
+              <input
+                type="radio"
+                id="ligth"
+                name="option"
+                value="ligth"
+                checked
+              />
+              Ligth
+            </div>
+          </label>
+          <label for="dark">
+          <div class="btn-dark">
+            <input type="radio" id="dark" name="option" value="dark" />
+            Dark
+          </div>
+        </label>
+        <label for="custom">
+          <div class="btn-custom">
+            <input type="radio" id="custom" name="option" value="custom" />
+            Custom
+          </div>
+        </div>
+      </label>
+        <div class="inf">
+          <h2>Hello, World!</h2>
+          <p>This is a simple card that changes theme with CSS variables</p>
+        </div>
+        <div class="btn">
+          <div>Primary Button</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
