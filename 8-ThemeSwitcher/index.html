@@ -1,99 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/9402c6b12a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-    <style>
-      body {
-        font-size: 16px;
-        margin: 0;
-        font-family: "Sansation", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
 
-      .container {
-        width: 70%;
-        max-width: 1200px;
-        margin: 100px auto;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/9402c6b12a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+  <style>
+    :root {
+      --light-dark-btn-color: #2e63e3;
+      --custom-btn-color: #2b8a45;
+    }
 
-      .d-flex-center {
-        display: flex;
-        justify-content: center;
-      }
+    body {
+      font-size: 16px;
+      margin: 0;
+      font-family: "Sansation", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
 
-      .theme-container {
-        width: 300px;
-      }
+    .container {
+      width: 70%;
+      max-width: 1200px;
+      margin: 100px auto;
+    }
 
-      .radio-btns {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        border: 1px solid black;
-        border-radius: 10px;
-      }
+    .d-flex-center {
+      display: flex;
+      justify-content: center;
+    }
 
-      .radio-btns div {
-        padding: 10px;
-        text-align: center;
-      }
+    .theme-container {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    }
 
-      .radio-btns input[type="radio"] {
-        appearance: none;
-        -webkit-appearance: none;
-      }
+    .radio-btns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid black;
+      border-radius: 10px;
+    }
 
-      .btn-ligth:has(input[type="radio"]:checked) {
-        background-color: aqua;
-        border-radius: 10px 0 0 10px;
-      }
+    .radio-btns div {
+      padding: 10px;
+      text-align: center;
+    }
 
-      .btn-dark:has(input[type="radio"]:checked) {
-        background-color: aqua;
-      }
+    .radio-btns input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+    }
 
-      .btn-custom:has(input[type="radio"]:checked) {
-        background-color: green;
-        border-radius:0 10px 10px 0;
-      }
+    .btn-ligth:has(input[type="radio"]:checked) {
+      background-color: var(--light-dark-btn-color);
+      border-radius: 10px 0 0 10px;
+      color: white;
+    }
 
-      .btn {
-        padding: 10px;
-        color: white;
-        background-color: blue;
-      }
-    </style>
-  </head>
+    /* .btn-dark:has(input[type="radio"]:checked) .inf {
+      color: white;
+    } */
 
-  <body>
-    <div class="container d-flex-center">
-      <div class="theme-container">
-        <div class="radio-btns">
-          <label for="ligth">
-            <div class="btn-ligth">
-              <input
-                type="radio"
-                id="ligth"
-                name="option"
-                value="ligth"
-                checked
-              />
-              Ligth
-            </div>
-          </label>
-          <label for="dark">
+    .btn-dark:has(input[type="radio"]:checked) {
+      background-color: var(--light-dark-btn-color);
+      color: white;
+    }
+
+    .btn-custom:has(input[type="radio"]:checked) {
+      background-color: green;
+      border-radius: 0 10px 10px 0;
+      color: white;
+    }
+
+    .btn {
+      padding: 10px;
+      color: white;
+      background-color: var(--light-dark-btn-color);
+      border-radius: 10px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container d-flex-center">
+    <div class="theme-container">
+      <div class="radio-btns">
+        <label for="ligth">
+          <div class="btn-ligth">
+            <input type="radio" id="ligth" name="option" value="ligth" checked />
+            Ligth
+          </div>
+        </label>
+        <label for="dark">
           <div class="btn-dark">
             <input type="radio" id="dark" name="option" value="dark" />
             Dark
@@ -104,16 +113,17 @@
             <input type="radio" id="custom" name="option" value="custom" />
             Custom
           </div>
-        </div>
+      </div>
       </label>
-        <div class="inf">
-          <h2>Hello, World!</h2>
-          <p>This is a simple card that changes theme with CSS variables</p>
-        </div>
-        <div class="btn">
-          <div>Primary Button</div>
-        </div>
+      <div class="inf">
+        <h2>Hello, World!</h2>
+        <p>This is a simple card that changes theme with CSS variables</p>
+      </div>
+      <div style="display: flex;">
+        <div class=" btn">Primary Button</div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
