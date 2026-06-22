@@ -15,6 +15,7 @@
     :root {
       --light-dark-btn-color: #2e63e3;
       --custom-btn-color: #2b8a45;
+      --bg-color: white;
     }
 
     body {
@@ -37,10 +38,10 @@
     }
 
     .theme-container {
-    width: 300px;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
     }
 
     .radio-btns {
@@ -66,13 +67,19 @@
       color: white;
     }
 
-    /* .btn-dark:has(input[type="radio"]:checked) .inf {
-      color: white;
+    /* .btn-dark:has(input[type="radio"]:checked) {
+
+
+
     } */
 
     .btn-dark:has(input[type="radio"]:checked) {
       background-color: var(--light-dark-btn-color);
       color: white;
+
+      .theme-container {
+        background-color: black;
+      }
     }
 
     .btn-custom:has(input[type="radio"]:checked) {
@@ -88,7 +95,10 @@
       border-radius: 10px;
     }
 
+    @function --bg-color(--color: white) {
+      result: var(--color);
 
+    }
   </style>
 </head>
 
